@@ -1,11 +1,142 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="/img/favicon.ico" type="img/favicon.ico">
-  <title>RFES.RU - Личный блог</title>
- </head>
- <body>
-  <p>Привет, Друзья</p>
- </body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>RFES.RU</title>
+    <meta name="description" content="RFES.RU">
+
+    <meta property="og:title" content="RFES.RU">
+    <meta property="og:description" content="RFES.RU">
+    <meta property="og:image" content="img/site-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- You could also inline the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <a href="#home">RFES.RU</a>
+        </h1>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#news">Блог</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contact">Обратная связь</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+
+            <p>Добро пожаловать на сайт RFES.RU</p>
+            <a href="#img-about">
+                <img loading="lazy" alt="" src="./img/welcome.jpg" width="1200" height="600">
+            </a>
+        </section>
+
+        <section id="about">
+
+            <!-- Обо мне страница -->
+            <p>Страница обо мне находиться на стадии разработки <a href="#another-page"><a href="#home">Перейти на главную</a></p>
+
+            <figure>
+                <a href="#img-about">
+                    <img loading="lazy" alt="" src="//dummyimage.com/1200x600/ddd/bbb" width="1200" height="600">
+                </a>
+                <figcaption>Кликните на картинку чтоб увеличить</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="contact">
+            Contact me!
+        </section>
+        <section id="news">
+            <!-- Страница блога -->
+
+            <article>
+                <h2>Сайт обновлен <time datetime="2022-9-9">9.9.2020</time></h2>
+                <p>Сайт был обновлен до версии 1.1</p>
+            </article>
+
+            <article>
+                <h2>Сайт обновлен <time datetime="2022-8-8">8.8.2022</time></h2>
+                <p>Сайт был обновлен до версии 1.0</p>
+            </article>
+
+        </section>
+
+        <section id="photos">
+            <!-- PHOTOS -->
+
+            <p>An example of a photo gallery with a lightbox.</p>
+
+            <!-- You can use this grid of images in any page -->
+
+            <div class="grid">
+                <a href="#img-01"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+                <a href="#img-02"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+                <a href="#img-03"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+                <a href="#img-04"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+                <a href="#img-05"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+                <a href="#img-06"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+                <a href="#img-07"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+                <a href="#img-08"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+                <a href="#img-09"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+                <a href="#img-10"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+                <a href="#img-11"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+                <a href="#img-12"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+                <a href="#img-13"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+                <a href="#img-14"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+                <a href="#img-15"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+            </div>
+
+        </section>
+
+        <section id="portfolio">
+            <!-- PORTFOLIO -->
+
+
+        </section>
+
+        <section id="another-page">
+            <!-- ANOTHER PAGE -->
+
+            <p>This page is not referenced in the menu, yet it exists.</p>
+            <p><a href="#about">← back</a></p>
+
+        </section>
+
+    </main>
+
+    <!-- ----------
+    LIGHTBOX IMAGES
+    ----------- -->
+
+    <!-- PHOTOS grid -->
+
+    <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-04"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-05"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-06"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-07"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-08"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-09"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-10"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-11"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+</body>
 </html>
