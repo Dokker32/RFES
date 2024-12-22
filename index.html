@@ -1,123 +1,110 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/sections.css">
-    <link rel="stylesheet" href="/css/feedback.css">
+    <link rel="stylesheet" href="/css/snow.css">
     <link rel="icon" href="favicon.png" type="image/png">
-    <script src="js/main.js"></script>
-    
-    <title>Еще один сайт с котами</title>
+    <link rel="stylesheet" href="/css/snow.css">
+    <meta charset="utf-8">
+    <title>Здесь только показывают....</title>
 </head>
 
 <body>
+    <div class="snowflakes"></div>
     <div class="container">
-   
+
         <header>
-            <h1>Очередной сайт с котами</h1>
+            <h1><a href="/">Еще один сайт с {котами}</a></h1>
             <nav class="container">
-               
+
 
             <ul id="menu">
                 <li>
-                    <a href="#faq">Спуститься ниже</a>
-                </li>
-                <li>
-                    <a href="#feedback">Еще ниже</a>
+                    <a href="#faq">Частые вопросы</a>
                 </li>
 
                 <li>
-                    <a class="third" href="">На самое дно</a>
-                    
+                    <a href="/kb.html">1кб</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Dokker32">GITHUB</a>
                 </li>
 
+                <hr>
             </ul>
-  
+
         </nav>
-   
         </header>
         <section id="cats-gallery">
         <main class="gallery">
             <figure>
-                <img src="/img/cat1.jpg" alt="Тот самый кот" />
+                <img src="/img/cat1.jpg" alt="Тот самый кот" loading="lazy" />
             </figure>
             <figure>
-                <img src="/img/cat2.jpg" alt="Тот самый кот" />
+                <img src="/img/cat2.jpg" alt="Тот самый кот"loading="lazy" />
             </figure>
             <figure>
-                <img src="/img/cat3.jpg" alt="Тот самый кот" />
+                <img src="/img/cat3.jpg" alt="Тот самый кот"loading="lazy"/>
             </figure>
             <figure>
-                <img src="/img/cat4.jpg" alt="Тот самый кот" />
+                <img src="/img/cat4.jpg" alt="Тот самый кот" loading="lazy"/>
             </figure>
             <figure>
-                <img src="/img/cat5.jpg" alt="Тот самый кот" />
+                <img src="/img/cat5.jpg" alt="Тот самый кот" loading="lazy"/>
             </figure>
             <figure>
-                <img src="/img/cat6.jpg" alt="Тот самый кот" />
+                <img src="/img/cat6.jpg" alt="Тот самый кот" loading="lazy"/>
             </figure>
             <figure>
-                <img src="/img/cat7.jpg" alt="Тот самый кот" />
+                <img src="/img/cat7.jpg" alt="Тот самый кот" loading="lazy"/>
             </figure>
             <figure>
-                <img src="/img/cat8.jpg" alt="Тот самый кот" />
+                <img src="/img/cat8.jpg" alt="Тот самый кот" loading="lazy"/>
             </figure>
-        
+            <figure>
+                <img src="/img/Its-not-a-cat.jpg" alt="Не тот самый кот" loading="lazy"/>
+            </figure>
+
+
+
         </main>
     </section>
     <section id="faq">
-        <h1>Раздел который обычно никто никогда не читает</h1>
-        <h2>О чем этот сайт?</h2>
-        <p>Изначально здесь был однострачник (без якорей, реально одна страница) на Vue.js  </p>
-        <h2>Почему только коты, что насчет собак?</h2>
-        <p>Как ты определил что это коты, а не кошки?</p>
-        <p>Я hr/рекрутер/специалист отдела кадров/иное лицо занимающеюся подбором</p>
-
+        <hr>
+        <div class="questions">
+            <h2>Вы спрашиваете, я отвечаю ...</h2>
+        
+            <ul class="question-list">
+                <li>
+                    <h3>Зачем нужен сайт с котами?</h3>
+                    <p>А зачем вообще что-то нужно? Интернет — это коты. Коты — это интернет. Всё просто. Если вы ждали чего-то другого, я вас разочарую... но мягко, с мурлыканьем.</p>
+                </li>
+                <li>
+                    <h3>Почему коты? Почему не, скажем, хомяки?</h3>
+                    <p>Вы серьёзно хотите сравнивать котов и хомяков? Коты выигрывают по всем параметрам: харизма, грация, способность вызывать странные вопросы у посетителей сайта. Хомяки? Ну, они просто крутят колёсико. Скучно.</p>
+                </li>
+                <li>
+                    <h3>Можно ли как-то придать этому смысл?</h3>
+                    <p>Конечно! Просто представьте, что это артхаусный проект. Или метафора жизни: бессмысленна, но полна котиков. Как вам такой подход?</p>
+                </li>
+                <li>
+                    <h3>Вы добавите что-то полезное?</h3>
+                    <p>Уже добавляю! Вот, например, новый вопрос в FAQ. Полезно? Ну... наверное, нет. Но ведь вы это прочитали, а значит, сайт справляется со своей задачей.</p>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section id="feedback">
 
-        <div class="wrapper">
-            <h2>Feedback Form</h2>
-            <div id="error_message"></div>
-            <form id="myform" onsubmit="return validate();">
-              <div class="input_field">
-                  <input type="text" placeholder="First Name" id="fname">
-              </div>
-              <div class="input_field">
-                  <input type="text" placeholder="Last Name" id="lname">
-              </div>
-              <div class="input_field">
-                  <input type="text" placeholder="Phone" id="phone">
-              </div>
-              <div class="input_field">
-                  <input type="text" placeholder="Email" id="email">
-              </div>
-              <div class="input_field">
-                  <textarea placeholder="Your Feedback" id="yourfeedback"></textarea>
-              </div>
-              <div class="btn">
-                  <input type="submit">
-              </div>
-            </form>
-          </div>
-
-
-
-
-
-
-
-
-
-    </section>
         <footer>
-            <small>2023&copy; Мой первый подвал</small>
+            <hr>
+            <small>2025&copy; На самом дне - RFES.RU</small>
+             <small>Версия 1.9</small>
         </footer>
     </div>
+    <script src="/js/snow.js"></script>
 </body>
 
 </html>
