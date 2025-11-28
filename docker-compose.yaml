@@ -2,11 +2,11 @@
 version: "3.8"
 
 services:
-  rfes-site:
+  rfes:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: rfes-site
+    container_name: rfes
     restart: unless-stopped
     ports:
       - "8080:80"
