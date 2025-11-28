@@ -1,0 +1,21 @@
+# docker-compose.yaml
+version: "3.8"
+
+services:
+  rfes-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rfes-site
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      # Монтируем только логи, файлы сайта уже в образе
+      - ./logs:/var/log/nginx
+    networks:
+      - rfes-net
+
+networks:
+  rfes-net:
+    driver: bridge
